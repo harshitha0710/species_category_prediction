@@ -114,6 +114,10 @@ The model is deployed using Azure and exposed via a REST API. This allows real-t
 
 
 
+
+
+
+
   
 
 
