@@ -35,6 +35,19 @@ Data was collected from the website [https://www.iucnredlist.org/]() through aut
 ![image](https://github.com/user-attachments/assets/984386be-e62a-4961-9b20-8798face3048)
 
 
+**🧪 Data Pipeline**
+![image](https://github.com/user-attachments/assets/d24eb30a-773a-405b-928f-cb2021169ffa)
+
+1. **Web Scraping** - Automated collection of species data
+2. **Data Cleaning** - Removing nulls, transforming features
+3. **Cloud Storage** - Azure blob storage integration
+4. **Model Evaluation** - Boosted Decision Tree and more
+5. **Deployment** - REST API for real-time results
+
+
+
+
+
 
 
 
