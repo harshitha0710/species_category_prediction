@@ -20,6 +20,34 @@ Data was collected from the website [https://www.iucnredlist.org/]() through aut
 
 ![image](https://github.com/user-attachments/assets/0bdd4347-eba9-49fc-9ff0-3c573a10a7b0)
 
+
+
+
+**SELENIUM**
+
+
+
+Selenium was used to automate the process of:
+
+Opening and navigating through the IUCN Red List website.
+
+Applying search filters (like population trend, marine regions).
+
+Clicking buttons and extracting data such as generation lengths, threats, categories, and habitats.
+
+Opening new tabs, scraping required data from each species page, and saving the results into CSV files.
+
+Basically, Selenium helped act like a human user but in an automated, fast, and repeatable way.
+
+> USED XPATH TO SCRAPE 
+
+
+![image](https://github.com/user-attachments/assets/f16be28c-04db-45ab-a499-65d316dbc131)
+
+
+
+
+
 **SAMPLE CSV**
 
 
