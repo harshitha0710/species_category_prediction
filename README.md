@@ -104,18 +104,18 @@ The model is deployed using Azure and exposed via a REST API. This allows real-t
 
 FOR DIFFERENT ML MODELS
 
-![image](https://github.com/user-attachments/assets/e1672139-0d35-4f9a-8318-c2572faace0a)
+
 
 **🧠 ACCURACY OPTIMIZATION PROCESS**
 
 
-Data Collection
+**Data Collection**
 Selenium was used to scrape diverse data from the IUCN Red List, including habitat type, threats, population trends, and conservation status of species.
 
-Data Cleaning
+**Data Cleaning**
 The dataset was refined by removing duplicates, handling missing values with median imputation, converting generation lengths to integers, and dropping rows with critical null fields.
-
-Algorithm Comparison
+**
+Algorithm Comparison**
 Multiple machine learning algorithms were evaluated:
 
 Multiclass Neural Network
@@ -129,7 +129,7 @@ The Boosted Decision Tree demonstrated superior performance and was selected for
 📊 MODEL EVALUATION METRICS**
 
 
-Multiclass Neural Network Results
+**Multiclass Neural Network Results**
 
 Overall Accuracy: 0.5235
 
@@ -141,7 +141,7 @@ Micro Recall: 0.5235
 
 Macro Recall: 0.3245
 
-Multiclass Boosted Decision Tree Results
+**Multiclass Boosted Decision Tree Results**
 
 Overall Accuracy: 0.6185
 
@@ -153,23 +153,8 @@ Micro Recall: 0.6185
 
 Macro Recall: 0.3982
 
-Performance Insight:
+**Performance Insight:**
 The Boosted Decision Tree provided a 6–8% increase in accuracy and precision over previous models.
-
-**🧪 MODEL STATUS**
-
-
-The current model is underfitted, meaning there's still potential to improve its generalization on unseen data. Future improvements may include additional data features or ensemble methods.
-
-**⚙️ MODEL TUNING SUMMARY**
-
-
-Feature Selection: Focused on high-impact features like habitat, threats, population trend, and generation length. Irrelevant fields such as species name or IDs were dropped.
-
-Cleaning & Preprocessing: Ensured completeness and consistency through imputation and type conversions.
-
-Evaluation Strategy: Accuracy, precision, and recall metrics were used to select the best-performing model for deployment.
-
 
 
 
