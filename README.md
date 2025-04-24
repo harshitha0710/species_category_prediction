@@ -35,7 +35,8 @@ Data was collected from the website [https://www.iucnredlist.org/]() through aut
 ![image](https://github.com/user-attachments/assets/984386be-e62a-4961-9b20-8798face3048)
 
 
-**🧪 Data Pipeline**
+**🧪 DATA PIPELINE**
+
 ![image](https://github.com/user-attachments/assets/d24eb30a-773a-405b-928f-cb2021169ffa)
 
  **Web Scraping** - Automated collection of species data
@@ -47,7 +48,7 @@ Data was collected from the website [https://www.iucnredlist.org/]() through aut
 **1. Data Collection (Scraping via Selenium)**
 Automated data scraping is performed from the IUCN Red List website. The script extracts important species attributes such as name, habitat, number of threats, population trends, and category status.
 
-**2. Clean Missing Data **
+**2. Clean Missing Data** 
 Rows with null values in critical columns like habitat or category status are removed to ensure data integrity.
 
 **3. Data Preprocessing**
@@ -57,14 +58,14 @@ Convert textual values (like population trends) into categorical codes or numeri
 Generation length is converted to integers.
 
 Remaining missing values are replaced using appropriate strategies (like median imputation).
-**
-4. Data Storage (Azure Blob)**
+
+**4. Data Storage (Azure Blob)**
 The cleaned dataset is stored in Microsoft Azure’s cloud storage for scalability and easy access during model training and deployment.
 
 **5. Data Splitting**
 The dataset is split into training and testing subsets — typically 70% for training and 30% for testing — to validate model performance.
-**
-6. Model Building (Azure ML Studio)**
+
+**6. Model Building (Azure ML Studio)**
 Multiple algorithms are evaluated, including:
 
 Logistic Regression
