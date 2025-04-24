@@ -6,11 +6,14 @@ Data includes factors such as habitat , no. of threats , category, and populatio
 It identifies the likelihood of species becoming endangered. Data has been collected and analyzed from [https://www.iucnredlist.org/]() website.
 By applying advanced algorithms to analyze patterns and relationships within the dataset , the goal is to provide insights that can guide conservation efforts.
 
+
 ![image](https://github.com/user-attachments/assets/0bdd4347-eba9-49fc-9ff0-3c573a10a7b0)
 
 #SAMPLE CSV
 
-![image](https://github.com/user-attachments/assets/75da2a92-ef82-4d4e-9470-8c8ef5b82678)
+
+![image](https://github.com/user-attachments/assets/7558923b-c7b5-4d61-a6b5-44f6b909a73e)
+
 
 #WEBSITE USED
 
