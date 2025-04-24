@@ -1,10 +1,21 @@
 # species_category_prediction
 **Data Collection and Development of Machine Learning Pipelines in Cloud**
 
-This project focuses on predicting the Category status of various species using Machine learning techniques . Where the to be predicted labels are: Least concerned , Endangered,Critically Endangered,Extinct,vulnerable , nearly threatened.
-Data includes factors such as habitat , no. of threats , category, and population trends, which are crucial for accurate predictions.
-It identifies the likelihood of species becoming endangered. Data has been collected and analyzed from [https://www.iucnredlist.org/]() website.
-By applying advanced algorithms to analyze patterns and relationships within the dataset , the goal is to provide insights that can guide conservation efforts.
+#🐾 Project Overview
+
+This project focuses on predicting the conservation status of various species using machine learning techniques. The model classifies species into one of several IUCN categories: Least Concern, Near Threatened, Vulnerable, Endangered, Critically Endangered, or Extinct.
+
+Key features used for prediction include:
+
+Habitat
+
+Number of threats
+
+Population trends
+
+Existing category status
+
+Data was collected from the website [https://www.iucnredlist.org/]() through automated web scraping. By analyzing patterns within this dataset using advanced algorithms, the goal is to provide actionable insights that support global conservation efforts.
 
 
 ![image](https://github.com/user-attachments/assets/0bdd4347-eba9-49fc-9ff0-3c573a10a7b0)
