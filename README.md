@@ -38,11 +38,58 @@ Data was collected from the website [https://www.iucnredlist.org/]() through aut
 **🧪 Data Pipeline**
 ![image](https://github.com/user-attachments/assets/d24eb30a-773a-405b-928f-cb2021169ffa)
 
-1. **Web Scraping** - Automated collection of species data
-2. **Data Cleaning** - Removing nulls, transforming features
-3. **Cloud Storage** - Azure blob storage integration
-4. **Model Evaluation** - Boosted Decision Tree and more
-5. **Deployment** - REST API for real-time results
+ **Web Scraping** - Automated collection of species data
+ **Data Cleaning** - Removing nulls, transforming features
+ **Cloud Storage** - Azure blob storage integration
+ **Model Evaluation** - Boosted Decision Tree and more
+ **Deployment** - REST API for real-time results
+
+**1. Data Collection (Scraping via Selenium)**
+Automated data scraping is performed from the IUCN Red List website. The script extracts important species attributes such as name, habitat, number of threats, population trends, and category status.
+
+**2. Clean Missing Data **
+Rows with null values in critical columns like habitat or category status are removed to ensure data integrity.
+
+**3. Data Preprocessing**
+
+Convert textual values (like population trends) into categorical codes or numerical equivalents.
+
+Generation length is converted to integers.
+
+Remaining missing values are replaced using appropriate strategies (like median imputation).
+**
+4. Data Storage (Azure Blob)**
+The cleaned dataset is stored in Microsoft Azure’s cloud storage for scalability and easy access during model training and deployment.
+
+**5. Data Splitting**
+The dataset is split into training and testing subsets — typically 70% for training and 30% for testing — to validate model performance.
+**
+6. Model Building (Azure ML Studio)**
+Multiple algorithms are evaluated, including:
+
+Logistic Regression
+
+Decision Forest
+
+Multiclass Neural Network
+
+Boosted Decision Tree (selected for deployment due to best performance)
+
+**7. Train Model**
+The model is trained on the training dataset, adjusting internal parameters to minimize prediction error.
+
+**8. Feature Selection**
+Only relevant columns such as habitat, threats, population trend, generation length, etc., are selected to improve model performance and reduce noise.
+
+**9. Score Model**
+The trained model is tested against the unseen 30% of the dataset to generate performance scores like accuracy, precision, recall, and F1 score.
+
+**10. Evaluate Model**
+Based on evaluation metrics, the best-performing model (Boosted Decision Tree) is selected for final deployment.
+
+**11. Model Deployment (via REST API)**
+The model is deployed using Azure and exposed via a REST API. This allows real-time predictions through tools like Postman or web applications.
+
 
 
 
