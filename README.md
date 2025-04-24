@@ -106,67 +106,23 @@ FOR DIFFERENT ML MODELS
 ![image](https://github.com/user-attachments/assets/2d67a2db-eab1-4dc1-9df5-c5ee5da455c6)
 
 
+**🚀 INFERENCE AND MODEL DEPLOYMENT – POSTMAN**
+The deployed model accepts input via a REST API using Postman. The JSON input includes species-related details such as habitat type, number of threats, population trend, generation length, and existing category status.
+**INPUT**
+
+![image](https://github.com/user-attachments/assets/30eaac78-6a23-4717-a7db-cda369427fb9)
 
 
 
+**OUTPUT**
 
 
-
-**🧠 ACCURACY OPTIMIZATION PROCESS**
-
-
-**Data Collection**
-Selenium was used to scrape diverse data from the IUCN Red List, including habitat type, threats, population trends, and conservation status of species.
-
-**Data Cleaning**
-The dataset was refined by removing duplicates, handling missing values with median imputation, converting generation lengths to integers, and dropping rows with critical null fields.
-
-**Algorithm Comparison**
-Multiple machine learning algorithms were evaluated:
-
-Multiclass Neural Network
-
-Decision Forest
-
-Multiclass Boosted Decision Tree
-
-The Boosted Decision Tree demonstrated superior performance and was selected for final deployment.
+![image](https://github.com/user-attachments/assets/6e42770c-bf84-4347-89b7-6f1eb68d8af4)
 
 
+Upon sending this data through the API, the JSON output received includes all the submitted features along with an additional field: “Scored Labels”. This field indicates the predicted conservation status (e.g., Endangered, Vulnerable, Least Concern, etc.) as determined by the trained model.
 
-
-
-**📊 MODEL EVALUATION METRICS**
-
-
-**Multiclass Neural Network Results**
-
-Overall Accuracy: 0.5235
-
-Micro Precision: 0.5235
-
-Macro Precision: 0.3152
-
-Micro Recall: 0.5235
-
-Macro Recall: 0.3245
-
-**Multiclass Boosted Decision Tree Results**
-
-Overall Accuracy: 0.6185
-
-Micro Precision: 0.6185
-
-Macro Precision: 0.4254
-
-Micro Recall: 0.6185
-
-Macro Recall: 0.3982
-
-**Performance Insight:**
-The Boosted Decision Tree provided a 6–8% increase in accuracy and precision over previous models.
-
-
+This setup allows real-time classification of species based on dynamic ecological data.
 
 
 
