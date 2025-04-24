@@ -151,6 +151,11 @@ This setup allows real-time classification of species based on dynamic ecologica
 
 
 
+**The Multiclass Boosted Decision Tree model achieved an overall accuracy of 61.84%, effectively predicting the endangerment status of species. Deployed via a REST API, it provides real-time conservation insights based on ecological features like habitat, threats, and population trends.**
+
+
+
+
 
 
 
