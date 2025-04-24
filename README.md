@@ -103,6 +103,7 @@ The model is deployed using Azure and exposed via a REST API. This allows real-t
 ![image](https://github.com/user-attachments/assets/c908add8-c20e-460d-9319-154ad5a9a2f6)
 
 FOR DIFFERENT ML MODELS
+![Uploading image.png…]()
 
 
 
@@ -114,8 +115,8 @@ Selenium was used to scrape diverse data from the IUCN Red List, including habit
 
 **Data Cleaning**
 The dataset was refined by removing duplicates, handling missing values with median imputation, converting generation lengths to integers, and dropping rows with critical null fields.
-**
-Algorithm Comparison**
+
+**Algorithm Comparison**
 Multiple machine learning algorithms were evaluated:
 
 Multiclass Neural Network
@@ -125,8 +126,8 @@ Decision Forest
 Multiclass Boosted Decision Tree
 
 The Boosted Decision Tree demonstrated superior performance and was selected for final deployment.
-**
-📊 MODEL EVALUATION METRICS**
+
+**📊 MODEL EVALUATION METRICS**
 
 
 **Multiclass Neural Network Results**
