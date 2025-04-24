@@ -35,6 +35,10 @@ Data was collected from the website [https://www.iucnredlist.org/]() through aut
 ![image](https://github.com/user-attachments/assets/984386be-e62a-4961-9b20-8798face3048)
 
 
+
+
+
+
 **🧪 DATA PIPELINE**
 
 ![image](https://github.com/user-attachments/assets/d24eb30a-773a-405b-928f-cb2021169ffa)
@@ -98,15 +102,35 @@ Based on evaluation metrics, the best-performing model (Boosted Decision Tree) i
 
 The model is deployed using Azure and exposed via a REST API. This allows real-time predictions through tools like Postman or web applications.
 
+
+
+
+  
+
+
+
 **EVALUATION METRICS**
 
 ![image](https://github.com/user-attachments/assets/c908add8-c20e-460d-9319-154ad5a9a2f6)
+
+
+
+
+
+
 
 FOR DIFFERENT ML MODELS
 ![image](https://github.com/user-attachments/assets/2d67a2db-eab1-4dc1-9df5-c5ee5da455c6)
 
 
+
+
+
+
+
 **🚀 INFERENCE AND MODEL DEPLOYMENT – POSTMAN**
+
+
 The deployed model accepts input via a REST API using Postman. The JSON input includes species-related details such as habitat type, number of threats, population trend, generation length, and existing category status.
 **INPUT**
 
