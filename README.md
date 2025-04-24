@@ -103,7 +103,12 @@ The model is deployed using Azure and exposed via a REST API. This allows real-t
 ![image](https://github.com/user-attachments/assets/c908add8-c20e-460d-9319-154ad5a9a2f6)
 
 FOR DIFFERENT ML MODELS
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/2d67a2db-eab1-4dc1-9df5-c5ee5da455c6)
+
+
+
+
+
 
 
 
@@ -126,6 +131,10 @@ Decision Forest
 Multiclass Boosted Decision Tree
 
 The Boosted Decision Tree demonstrated superior performance and was selected for final deployment.
+
+
+
+
 
 **📊 MODEL EVALUATION METRICS**
 
