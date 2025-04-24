@@ -39,15 +39,7 @@ Data was collected from the website [https://www.iucnredlist.org/]() through aut
 
 ![image](https://github.com/user-attachments/assets/d24eb30a-773a-405b-928f-cb2021169ffa)
 
- **Web Scraping** - Automated collection of species data
- 
- **Data Cleaning** - Removing nulls, transforming features
- 
- **Cloud Storage** - Azure blob storage integration
- 
- **Model Evaluation** - Boosted Decision Tree and more
- 
- **Deployment** - REST API for real-time results
+
 
 **1. Data Collection (Scraping via Selenium)**
 
@@ -105,6 +97,80 @@ Based on evaluation metrics, the best-performing model (Boosted Decision Tree) i
 **11. Model Deployment (via REST API)**
 
 The model is deployed using Azure and exposed via a REST API. This allows real-time predictions through tools like Postman or web applications.
+
+**EVALUATION METRICS**
+
+![image](https://github.com/user-attachments/assets/c908add8-c20e-460d-9319-154ad5a9a2f6)
+
+FOR DIFFERENT ML MODELS
+
+![image](https://github.com/user-attachments/assets/e1672139-0d35-4f9a-8318-c2572faace0a)
+
+**🧠 ACCURACY OPTIMIZATION PROCESS**
+
+
+Data Collection
+Selenium was used to scrape diverse data from the IUCN Red List, including habitat type, threats, population trends, and conservation status of species.
+
+Data Cleaning
+The dataset was refined by removing duplicates, handling missing values with median imputation, converting generation lengths to integers, and dropping rows with critical null fields.
+
+Algorithm Comparison
+Multiple machine learning algorithms were evaluated:
+
+Multiclass Neural Network
+
+Decision Forest
+
+Multiclass Boosted Decision Tree
+
+The Boosted Decision Tree demonstrated superior performance and was selected for final deployment.
+**
+📊 MODEL EVALUATION METRICS**
+
+
+Multiclass Neural Network Results
+
+Overall Accuracy: 0.5235
+
+Micro Precision: 0.5235
+
+Macro Precision: 0.3152
+
+Micro Recall: 0.5235
+
+Macro Recall: 0.3245
+
+Multiclass Boosted Decision Tree Results
+
+Overall Accuracy: 0.6185
+
+Micro Precision: 0.6185
+
+Macro Precision: 0.4254
+
+Micro Recall: 0.6185
+
+Macro Recall: 0.3982
+
+Performance Insight:
+The Boosted Decision Tree provided a 6–8% increase in accuracy and precision over previous models.
+
+**🧪 MODEL STATUS**
+
+
+The current model is underfitted, meaning there's still potential to improve its generalization on unseen data. Future improvements may include additional data features or ensemble methods.
+
+**⚙️ MODEL TUNING SUMMARY**
+
+
+Feature Selection: Focused on high-impact features like habitat, threats, population trend, and generation length. Irrelevant fields such as species name or IDs were dropped.
+
+Cleaning & Preprocessing: Ensured completeness and consistency through imputation and type conversions.
+
+Evaluation Strategy: Accuracy, precision, and recall metrics were used to select the best-performing model for deployment.
+
+
 
 
 
